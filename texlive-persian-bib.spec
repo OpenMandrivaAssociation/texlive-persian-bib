@@ -1,3 +1,9 @@
+# revision 23267
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/persian-bib
+# catalog-date 2011-07-10 22:10:07 +0200
+# catalog-license lppl
+# catalog-version 0.6
 Name:		texlive-persian-bib
 Version:	0.6
 Release:	1
@@ -56,6 +62,7 @@ are defined.
 %doc %{_texmfdistdir}/doc/xelatex/persian-bib/bibtex-example.pdf
 %doc %{_texmfdistdir}/doc/xelatex/persian-bib/bibtex-example.tex
 %doc %{_texmfdistdir}/doc/xelatex/persian-bib/gen_pdf.pl
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,3 +73,5 @@ are defined.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
