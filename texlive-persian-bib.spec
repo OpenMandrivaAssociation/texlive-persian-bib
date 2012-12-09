@@ -63,3 +63,17 @@ are defined.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.6-2
++ Revision: 754811
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.6-1
++ Revision: 719236
+- texlive-persian-bib
+- texlive-persian-bib
+- texlive-persian-bib
+- texlive-persian-bib
+
