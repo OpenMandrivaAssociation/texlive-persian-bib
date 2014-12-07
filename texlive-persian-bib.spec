@@ -6,7 +6,7 @@
 # catalog-version 0.6
 Name:		texlive-persian-bib
 Version:	0.6
-Release:	8
+Release:	9
 Summary:	Persian translations of classic BibTeX styles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/persian-bib
