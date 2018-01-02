@@ -1,12 +1,6 @@
-# revision 23267
-# category Package
-# catalog-ctan /biblio/bibtex/contrib/persian-bib
-# catalog-date 2011-07-10 22:10:07 +0200
-# catalog-license lppl
-# catalog-version 0.6
 Name:		texlive-persian-bib
-Version:	0.6
-Release:	10
+Version:	0.9
+Release:	1
 Summary:	Persian translations of classic BibTeX styles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/persian-bib
@@ -38,21 +32,9 @@ are defined.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bst/persian-bib/acm-fa.bst
-%{_texmfdistdir}/bibtex/bst/persian-bib/asa-fa.bst
-%{_texmfdistdir}/bibtex/bst/persian-bib/chicago-fa.bst
-%{_texmfdistdir}/bibtex/bst/persian-bib/ieeetr-fa.bst
-%{_texmfdistdir}/bibtex/bst/persian-bib/plain-fa.bst
-%{_texmfdistdir}/bibtex/bst/persian-bib/plainnat-fa.bst
-%{_texmfdistdir}/bibtex/bst/persian-bib/unsrt-fa.bst
-%{_texmfdistdir}/bibtex/csf/persian-bib/cp1256fa.csf
-%doc %{_texmfdistdir}/doc/xelatex/persian-bib/MyReferences.bib
-%doc %{_texmfdistdir}/doc/xelatex/persian-bib/Persian-bib-userguide.pdf
-%doc %{_texmfdistdir}/doc/xelatex/persian-bib/Persian-bib-userguide.tex
-%doc %{_texmfdistdir}/doc/xelatex/persian-bib/README
-%doc %{_texmfdistdir}/doc/xelatex/persian-bib/bibtex-example.pdf
-%doc %{_texmfdistdir}/doc/xelatex/persian-bib/bibtex-example.tex
-%doc %{_texmfdistdir}/doc/xelatex/persian-bib/gen_pdf.pl
+%{_texmfdistdir}/bibtex/bst/persian-bib
+%{_texmfdistdir}/bibtex/csf/persian-bib
+%doc %{_texmfdistdir}/doc/xelatex/persian-bib
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,17 +45,3 @@ are defined.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.6-2
-+ Revision: 754811
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.6-1
-+ Revision: 719236
-- texlive-persian-bib
-- texlive-persian-bib
-- texlive-persian-bib
-- texlive-persian-bib
-
