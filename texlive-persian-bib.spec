@@ -1,12 +1,12 @@
 Name:		texlive-persian-bib
-Version:	0.9
-Release:	2
+Version:	37297
+Release:	1
 Summary:	Persian translations of classic BibTeX styles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/persian-bib
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/persian-bib.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/persian-bib.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/persian-bib.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/persian-bib.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +23,12 @@ references and three fields LANGUAGE, TRANSLATOR and AUTHORFA
 are defined.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -38,7 +38,7 @@ are defined.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
