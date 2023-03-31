@@ -1,6 +1,6 @@
 Name:		texlive-persian-bib
 Version:	37297
-Release:	1
+Release:	2
 Summary:	Persian translations of classic BibTeX styles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/persian-bib
